@@ -1,2 +1,2 @@
-# wyvern
-![The Wyvern Logo - an all seeing eye with a satalite orbiting in the background](https://github.com/kittymagician/wyvern/raw/main/wyvern.png)
+# wyvern - passive dns reconnaissance
+<img src=https://github.com/kittymagician/wyvern/raw/main/wyvern.png width="100" height="100">
