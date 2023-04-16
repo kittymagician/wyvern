@@ -17,6 +17,6 @@ In order to use wyvern you will need to obtain API keys from ipinfo, shodan and 
 wyvern was developed as a weekend project to try and "push the boundries" of what's possible with automation of passive DNS with OpenAI.
 
 ## OpenAI
-ChatGPT 3.5 (text-davinci-003) is the model currently being used by wyvern. The hard limit for this model is 4,097 tokens as such you may see report data cut off in the experimental report writing section as the model sometimes gets overloaded with the data being sent.  
+ChatGPT 3.5 ([text-davinci-003](https://platform.openai.com/docs/models/gpt-3-5)) is the model utilized by wyvern. The hard limit for this model is 4,097 tokens as such you may see report data cut off in the experimental report writing section as the model sometimes gets overloaded with the data being sent.  
 
 \*Please note: OpenAI support is extremely buggy. The data that is being presented to wyvern is buggy at best. It is not a replacement for an analyst.
