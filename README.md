@@ -2,7 +2,7 @@
 <img src=https://github.com/kittymagician/wyvern/raw/main/wyvern.png width="100" height="100">
 
 ## Features
-Google Public DNS Resolver - DNS Records
+Google Public DNS Resolver - DNS Records (A, MX, TXT)
 
 ipinfo - ASN enrichment
 
@@ -11,7 +11,7 @@ Shodan - CVEs
 OpenAI - Report Writing*
 
 ## API Keys
-In order to use wyvern you will need to obtain API keys from ipinfo, shodan and OpenAi. ipinfo has a nice free tier. Shodan has a one-off paid account that refreshes tokens every 30 days and OpenAi has a pay as you go service. 
+In order to use wyvern you will need to obtain API keys from ipinfo, shodan and OpenAi. ipinfo has a nice free tier. Shodan has a one-off paid account that refreshes tokens every 30 days and OpenAi has a pay as you go service however you can set hard limits and during testing/development the cost has been roughly $5 for lots of test reports. 
 
 ## The Story
 wyvern was developed as a weekend project to try and "push the boundries" of what's possible with automation of passive DNS with OpenAI.
