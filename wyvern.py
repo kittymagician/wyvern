@@ -10,23 +10,6 @@ from datetime import datetime
 import shodan
 import openai
 
-wyvern_art = '''
-                /\\
-               //\\\\
-      |\\___/|//  \\\\        /\\
-      /0  0  `      \\      //\\\\
-     (   /   =\\  /=\\ \\   ///\\\\\\\\   
-      \\\\/     //\\\\//\\\\\\/  |   \\\\\\\\\\  
-       \\\\    //  \\\\\\\\\\\\ \\_ _\\\\_\\\\_/
-       `\\"`   `\\"`  `\\"``   `\\"`\\"` 
-
-       Github: github.com/kittymagician/wyvern
-       Author: kittymagician
-       Licence: MIT License
-'''
-
-print(wyvern_art)
-
 # Define timezone
 utc = pendulum.timezone('UTC')
 
@@ -34,8 +17,10 @@ utc = pendulum.timezone('UTC')
 domain = "domain goes here"
 # Define company name for Shodan
 company_name = "company name goes here"
-# Define if Shodan query should run
+# Disable Shodan
 noShodan = False
+# Disable OpenAI
+noOpenAI = False
 # Define the DNS record types to query
 record_types = ["A", "MX", "TXT"]
 
@@ -278,7 +263,7 @@ if vulnerable_hosts:
     for host in vulnerable_hosts:
         report_text += f"IP: {host['ip']}\nHostname: {host['hostname']}\nVulnerabilities:\n{host['cves']}\n\n"
 print(report_text)
-if noShodan is False:
+if noShodan is False and noOpenAI is False:
   prompt = f"Please provide an overview of the findings for the following DNS records and Shodan data in 200 words or less include CVEs and provide recommendations on how to remediate:\n{report_text}"
   summary = generate_summary(prompt, 300)
   doc.add_heading("Findings Overview (OpenAi Experimental)", level=1)
