@@ -10,6 +10,22 @@ from datetime import datetime
 import shodan
 import openai
 
+wyvern_art = '''
+                /\\
+               //\\\\
+      |\\___/|//  \\\\        /\\
+      /0  0  `      \\      //\\\\
+     (   /   =\\  /=\\ \\   ///\\\\\\\\   
+      \\\\/     //\\\\//\\\\\\/  |   \\\\\\\\\\  
+       \\\\    //  \\\\\\\\\\\\ \\_ _\\\\_\\\\_/
+       `\\"`   `\\"`  `\\"``   `\\"`\\"` 
+       Github: github.com/kittymagician/wyvern
+       Author: kittymagician
+       Licence: MIT License
+'''
+
+print(wyvern_art)
+
 # Define timezone
 utc = pendulum.timezone('UTC')
 
